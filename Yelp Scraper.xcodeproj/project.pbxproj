@@ -13,6 +13,7 @@
 		220E36AB29B561DC008B48BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220E36A929B561DC008B48BB /* Main.storyboard */; };
 		220E36AD29B561DD008B48BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220E36AC29B561DD008B48BB /* Assets.xcassets */; };
 		220E36B029B561DD008B48BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 220E36AE29B561DD008B48BB /* LaunchScreen.storyboard */; };
+		226BFC9729B5661700755CD3 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 226BFC9629B5661700755CD3 /* SwiftSoup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		220E36AC29B561DD008B48BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		220E36AF29B561DD008B48BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		220E36B129B561DD008B48BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		226BFC9429B5660A00755CD3 /* SwiftSoup-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "SwiftSoup-master"; path = "../../Downloads/SwiftSoup-master"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				226BFC9729B5661700755CD3 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,8 @@
 			children = (
 				220E36A229B561DC008B48BB /* Yelp Scraper */,
 				220E36A129B561DC008B48BB /* Products */,
+				226BFC9429B5660A00755CD3 /* SwiftSoup-master */,
+				226BFC9529B5661700755CD3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +72,13 @@
 			path = "Yelp Scraper";
 			sourceTree = "<group>";
 		};
+		226BFC9529B5661700755CD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +95,9 @@
 			dependencies = (
 			);
 			name = "Yelp Scraper";
+			packageProductDependencies = (
+				226BFC9629B5661700755CD3 /* SwiftSoup */,
+			);
 			productName = "Yelp Scraper";
 			productReference = 220E36A029B561DC008B48BB /* Yelp Scraper.app */;
 			productType = "com.apple.product-type.application";
@@ -358,6 +373,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		226BFC9629B5661700755CD3 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 220E369829B561DC008B48BB /* Project object */;
 }
